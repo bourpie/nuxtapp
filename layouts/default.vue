@@ -16,7 +16,8 @@ export default {
   data () {
     return {
       title: 'Bienvenu chez moi',
-      description: 'Un site Nuxt en construction'
+      description: 'Un site Nuxt en construction',
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
     }
   },
   head () {
