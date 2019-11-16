@@ -22,8 +22,10 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+ css: [
+  'bootstrap-css-only/css/bootstrap.min.css',
+  'mdbvue/lib/css/mdb.min.css'
+],
   /*
   ** Plugins to load before mounting the App
   */
@@ -40,8 +42,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
@@ -55,11 +55,20 @@ export default {
   /*
   ** Build configuration
   */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  }
+ build: {
+  extend(config, ctx) {
+    config.module.rules.push({
+      enforce : 'pre',
+      test    : /\.(js|vue)$/,
+      loader  : 'eslint-loader',
+      exclude : /(node_modules)/,
+      options : {
+          fix : true
+      }
+    });
+  },
+  transpile: [
+    'mdbvue/lib/components'
+  ]
+}
 }

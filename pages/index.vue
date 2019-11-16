@@ -1,25 +1,19 @@
 <template>
   <div class="container">
-    <h1>{{title}}</h1>
+    <h1>{{ title }}</h1>
+    <mdb-btn color="primary">
+      MDB Button
+    </mdb-btn>
   </div>
 </template>
 
 <script>
+
+import { mdbBtn } from 'mdbvue'
+
 export default {
-  data () {
-    return {
-      title: 'Bienvenu chez moi',
-      description: 'Un site Nuxt en construction'
-    }
-  },
-  head () {
-    return {
-      title: this.title,
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: this.description }
-      ]
-    }
+  components: {
+    mdbBtn
   }
 }
 </script>
