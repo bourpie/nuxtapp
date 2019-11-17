@@ -46,20 +46,15 @@ export default {
 
     handleSubmit () {
       fetch('/', {
-
         method: 'post',
-        header: {
+        headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: this.encode({
           'form-name': 'contact',
           ...this.form
-
         })
-
       })
-        .then(() => console.log('Sucessfully sent'))
-        .catch(e => console.log(e))
     }
   }
 }
