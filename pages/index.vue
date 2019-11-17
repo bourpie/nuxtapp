@@ -39,8 +39,9 @@ export default {
   methods: {
 
     encode (data) {
-      return object.keys(data)
+      return Object.keys(data)
         .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+        .join('&')
     },
 
     handleSubmit () {
@@ -57,6 +58,8 @@ export default {
         })
 
       })
+        .then(() => console.log('Sucessfully sent'))
+        .catch(e => console.log(e))
     }
   }
 }
