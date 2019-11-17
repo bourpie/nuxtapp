@@ -12,9 +12,9 @@
               voluptate facere molestiae consequatur.
             </p>
             <div class="social-media">
-              <a href="https://facebook.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'facebook']" aria-hidden="true" /></a>
-              <a href="https://instagram.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'instagram']" aria-hidden="true" /></a>
-              <a href="https://twitter.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'twitter']" aria-hidden="true" /></a>
+              <a href="https://facebook.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'facebook']" aria-hidden="true" /> <span class="sr-only">Facebook</span></a>
+              <a href="https://instagram.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'instagram']" aria-hidden="true" /><span class="sr-only">Instagram</span></a>
+              <a href="https://twitter.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'twitter']" aria-hidden="true" /><span class="sr-only">Twitter</span></a>
             </div>
           </div>
           <form
@@ -27,21 +27,21 @@
           >
             <label hidden>Ne pas remplir si tu est un humain: <input name="bot-field"></label>
             <div class="field">
-              <label class="label">Nom</label>
+              <label for="nom" class="label">Nom</label>
               <div class="control">
-                <input v-model="form.nom" class="input is-medium" type="text" name="nom">
+                <input id="nom" v-model="form.nom" class="input is-medium" type="text" name="nom">
               </div>
             </div>
             <div class="field">
-              <label class="label">Courriel</label>
+              <label for="courriel" class="label">Courriel</label>
               <div class="control">
-                <input v-model="form.courriel" class="input is-medium" type="email" name="courriel">
+                <input id="courriel" v-model="form.courriel" class="input is-medium" type="email" name="courriel">
               </div>
             </div>
             <div class="field">
-              <label class="label">Message</label>
+              <label for="message" class="label">Message</label>
               <div class="control">
-                <textarea v-model="form.message" class="textarea is-medium" name="message" />
+                <textarea id="message" v-model="form.message" class="textarea is-medium" name="message" />
               </div>
             </div>
             <div class="control">
