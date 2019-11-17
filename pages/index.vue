@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
 
     <form @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-      <p class="hidden">
+      <p style="display: none">
         <label>Ne pas remplir si tu est un humain: <input name="bot-field"></label>
       </p>
       <p>
