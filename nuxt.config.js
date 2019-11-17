@@ -23,8 +23,8 @@ export default {
   ** Global CSS
   */
  css: [
-  'bootstrap-css-only/css/bootstrap.min.css',
-  'mdbvue/lib/css/mdb.min.css'
+ /* 'bootstrap-css-only/css/bootstrap.min.css',
+  'mdbvue/lib/css/mdb.min.css'*/
 ],
   /*
   ** Plugins to load before mounting the App
@@ -44,7 +44,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/bulma'
   ],
   /*
   ** Axios module configuration
