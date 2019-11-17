@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   router: {
     linkActiveClass: 'is-active'
   },
