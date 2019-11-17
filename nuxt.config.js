@@ -1,6 +1,9 @@
 
 export default {
   mode: 'universal',
+  router: {
+    linkActiveClass: 'is-active'
+  },
   /*
   ** Headers of the page
   */
@@ -18,7 +21,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#000' },
   /*
   ** Global CSS
   */
@@ -30,6 +33,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {src: '~/plugins/Vuelidate'}
   ],
   /*
   ** Nuxt.js dev-modules
@@ -45,7 +49,21 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/bulma'
+    '@nuxtjs/bulma',
+    [
+      'nuxt-fontawesome', {
+        imports: [
+         {
+           set: '@fortawesome/free-solid-svg-icons',
+           icons: ['fas']
+         },
+         {
+           set:'@fortawesome/free-brands-svg-icons',
+           icons: ['fab']
+         }
+       ]
+      }
+    ],
   ],
   /*
   ** Axios module configuration

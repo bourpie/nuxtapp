@@ -3,34 +3,22 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="../">
-          test
+          Pierre Bourgeois
         </a>
-        <span class="navbar-burger burger" data-target="navbarMenu">
+        <span @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
           <span />
           <span />
           <span />
         </span>
       </div>
-      <div id="navbarMenu" class="navbar-menu">
+      <div v-bind:class="{'is-active': isOpen}" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item is-active">Home</a>
-          <a class="navbar-item">Examples</a>
-          <a class="navbar-item">Features</a>
-          <a class="navbar-item">Team</a>
-          <a class="navbar-item">Archives</a>
-          <a class="navbar-item">Help</a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Account</a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">Dashboard</a>
-              <a class="navbar-item">Profile</a>
-              <a class="navbar-item">Settings</a>
-              <hr class="navbar-divider">
-              <div class="navbar-item">
-                Logout
-              </div>
-            </div>
-          </div>
+          <nuxt-link class="navbar-item" to="/">
+            Accueil
+          </nuxt-link>
+          <nuxt-link class="navbar-item" to="/blog">
+            Blogue
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -39,6 +27,11 @@
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  data () {
+    return {
+      isOpen: false
+    }
+  }
 }
 </script>

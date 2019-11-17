@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Navbar />
     <nuxt />
   </div>
@@ -40,4 +40,31 @@ export default {
   .btn {
     border-radius: 30px;
   }
+
+  .page-enter-active {
+    animation: acrossIn .15s ease-out both;
+  }
+
+  .page-leave-active {
+    animation: acrossOut .25s ease-in both;
+  }
+
+  @keyframes acrossIn {
+    0% {
+      transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes acrossOut {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
 </style>

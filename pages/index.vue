@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-fullheight">
+  <section class="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="columns is-8 is-variable ">
@@ -12,9 +12,9 @@
               voluptate facere molestiae consequatur.
             </p>
             <div class="social-media">
-              <a href="https://facebook.com" target="_blank" class="button is-light is-large"><i class="fa fa-facebook-square" aria-hidden="true" /></a>
-              <a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram" aria-hidden="true" /></a>
-              <a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-twitter" aria-hidden="true" /></a>
+              <a href="https://facebook.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'facebook']" aria-hidden="true" /></a>
+              <a href="https://instagram.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'instagram']" aria-hidden="true" /></a>
+              <a href="https://twitter.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'twitter']" aria-hidden="true" /></a>
             </div>
           </div>
           <form
