@@ -12,9 +12,9 @@
               voluptate facere molestiae consequatur.
             </p>
             <div class="social-media">
-              <a href="https://facebook.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'facebook']" aria-hidden="true" /> <span class="sr-only">Facebook</span></a>
-              <a href="https://instagram.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'instagram']" aria-hidden="true" /><span class="sr-only">Instagram</span></a>
-              <a href="https://twitter.com" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'twitter']" aria-hidden="true" /><span class="sr-only">Twitter</span></a>
+              <a href="https://facebook.com" rel="noopener" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'facebook']" aria-hidden="true" /> <span class="sr-only">Facebook</span></a>
+              <a href="https://instagram.com" rel="noopener" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'instagram']" aria-hidden="true" /><span class="sr-only">Instagram</span></a>
+              <a href="https://twitter.com" rel="noopener" target="_blank" class="button is-light is-large"><font-awesome-icon :icon="['fab', 'twitter']" aria-hidden="true" /><span class="sr-only">Twitter</span></a>
             </div>
           </div>
           <form
