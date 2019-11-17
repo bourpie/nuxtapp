@@ -2,7 +2,7 @@
   <section>
     <ul>
       <li v-for="(blog, index) in blogPosts" :key="index">
-        <a :href="index">{{ blog.title }}</a>
+        <a :href="blog">{{ blog.title }}</a>
       </li>
     </ul>
   </section>
