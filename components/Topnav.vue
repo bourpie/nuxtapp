@@ -2,9 +2,10 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="../">
+        <nuxt-link class="navbar-item" to="/">
           Pierre Bourgeois
-        </a>
+        </nuxt-link>
+
         <span @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
           <span />
           <span />

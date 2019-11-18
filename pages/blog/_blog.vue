@@ -1,6 +1,8 @@
 <template>
-  <article>
-    <h1>{{ blogPost.title }}</h1>
+  <article class="container">
+    <h1 class="title is h1">
+      {{ blogPost.title }}
+    </h1>
     <div>{{ blogPost.body }}</div>
   </article>
 </template>

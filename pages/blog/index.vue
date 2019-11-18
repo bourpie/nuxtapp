@@ -1,12 +1,15 @@
 <template>
-  <section>
+  <section class="container">
+    <h1 class="title is-1">
+      Liste
+    </h1>
     <ul>
       <li v-for="(blog, index) in blogPosts" :key="index">
-        <a :href="'blog/' + blog.slug">{{ blog.title }}</a>
+        <nuxt-link :to="'blog/' + blog.slug">
+          {{ blog.title }}
+        </nuxt-link>
       </li>
     </ul>
-
-    {{ blogPosts }}
   </section>
 </template>
 
