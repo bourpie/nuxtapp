@@ -45,8 +45,8 @@
               </div>
             </div>
             <div class="control">
-              <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">
-                Envoyer le message
+              <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium" />
+              Envoyer le message
               </button>
             </div>
           </form>
