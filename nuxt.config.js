@@ -2,7 +2,7 @@
 export default {
   mode: 'universal',
   router: {
-    linkActiveClass: 'is-active'
+    linkExactActiveClass: 'is-active'
   },
   /*
   ** Headers of the page
