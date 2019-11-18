@@ -6,7 +6,7 @@
           Pierre Bourgeois
         </nuxt-link>
 
-        <span @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+        <span @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}" :aria-expanded="isOpen" class="navbar-burger burger" aria-label="menu">
           <span />
           <span />
           <span />

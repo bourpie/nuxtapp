@@ -25,7 +25,7 @@
             netlify-honeypot="bot-field"
             data-netlify="true"
           >
-            <label hidden>Ne pas remplir si tu est un humain: <input name="bot-field"></label>
+            <label hidden>Laisse ce champ vide si tu es un humain: <input name="bot-field"></label>
             <div class="field">
               <label for="nom" class="label">Nom</label>
               <div class="control">
@@ -45,8 +45,8 @@
               </div>
             </div>
             <div class="control">
-              <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium" />
-              Envoyer le message
+              <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">
+                Envoyer le message
               </button>
             </div>
           </form>
