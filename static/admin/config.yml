@@ -5,7 +5,7 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-site_url: https://example.com
+site_url: https://pierrebourgeois.ca
 
 publish_mode: editorial_workflow
 
@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines that are specific to a collection.
-    folder: '_posts'
+    folder: 'assets/content/blog'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     create: true # Allow users to create new documents in this collection
@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: 'faq' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'FAQ' # Used in the UI
-    folder: '_faqs'
+    folder: 'assets/content/faqs'
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: 'Question', name: 'title', widget: 'string', tagname: 'h1' }
