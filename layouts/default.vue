@@ -30,6 +30,21 @@ export default {
 </script>
 
 <style lang="scss">
+
+a.navbar-item.is-active {
+
+  background: #000000;
+}
+
+a.navbar-item.is-active.nuxt-link-active {
+  background: #000000;
+  color: white;
+}
+
+a.navbar-item.is-active:not(:focus):not(:hover), .navbar-link.is-active:not(:focus):not(:hover) {
+    background-color: #000000;
+}
+
   $bleu: #095797 !important;
   .bg-primary,
   .btn-primary {
