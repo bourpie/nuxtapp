@@ -15,22 +15,16 @@ export default {
   },
   data () {
     return {
+      title: 'Bienvenue chez moi',
+      description: 'Un site Nuxt.js, Vue.js et Netlify à Montréal par Pierre Bourgeois',
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
-    }
-  },
-
-  async asyncData ({ payload }) {
-    if (payload) { return { site: payload } } else {
-      return {
-        site: await require(`~/assets/content/blog/2019-11-24-pierre-bourgeois.json`)
-      }
     }
   },
   head () {
     return {
-      title: site.title,
+      title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: site.description }
+        { hid: 'description', name: 'description', content: this.description }
       ]
     }
   }
