@@ -15,16 +15,22 @@ export default {
   },
   data () {
     return {
-      title: 'Bienvenu chez moi',
-      description: 'Un site Nuxt en construction',
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
+    }
+  },
+
+  async asyncData ({ payload }) {
+    if (payload) { return { site: payload } } else {
+      return {
+        site: await require(`~/assets/content/blog/2019-11-24-pierre-bourgeois.json`)
+      }
     }
   },
   head () {
     return {
-      title: this.title,
+      title: site.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.description }
+        { hid: 'description', name: 'description', content: site.description }
       ]
     }
   }
