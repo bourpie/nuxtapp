@@ -7,11 +7,9 @@
 
 <script>
 
-import Navbar from '@/components/Topnav'
-
 export default {
   components: {
-    Navbar
+    Navbar: () => import('@/components/Topnav')
   },
   data () {
     return {
