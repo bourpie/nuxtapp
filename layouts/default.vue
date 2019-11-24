@@ -15,8 +15,8 @@ export default {
   },
   data () {
     return {
-      title: 'Bienvenue chez moi',
-      description: 'Un site Nuxt.js, Vue.js et Netlify à Montréal par Pierre Bourgeois',
+      title: 'Pierrre Bourgeois - développeur Web à Montréal',
+      description: 'Un site expérimental de type Jamstack développé avec Nuxt.js, Vue.js et Netlify',
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
     }
   },
