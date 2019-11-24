@@ -53,7 +53,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/bulma',
-    [
+   /* [
       'nuxt-fontawesome', {
         imports: [
          {
@@ -66,7 +66,7 @@ export default {
          }
        ]
       }
-    ],
+    ],*/
   ],
   /*
   ** Axios module configuration
