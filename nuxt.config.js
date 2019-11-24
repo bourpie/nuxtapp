@@ -33,7 +33,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: '~/plugins/Vuelidate'}
+   
   ],
   /*
   ** Nuxt.js dev-modules
@@ -88,9 +88,6 @@ export default {
           fix : true
       }
     });
-  },
-  transpile: [
-    'mdbvue/lib/components'
-  ]
+  }
 }
 }
