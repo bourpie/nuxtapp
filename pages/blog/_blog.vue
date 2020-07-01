@@ -1,10 +1,12 @@
 <template>
-  <article class="container">
-    <h1 class="title is h1">
-      {{ blogPost.title }}
-    </h1>
-    <div>{{ blogPost.body }}</div>
-  </article>
+  <section class="section">
+    <article class="container">
+      <h1 class="title is h1">
+        {{ blogPost.title }}
+      </h1>
+      <div>{{ blogPost.body }}</div>
+    </article>
+  </section>
 </template>
 
 <script>
